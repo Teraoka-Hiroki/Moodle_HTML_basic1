@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>キッチンタイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1>キッチンタイマー</h1>
+        <!-- 残り時間を表示するエリア -->
+        <div id="time_display" class="time-display">00:00</div>
+
+        <div class="input-group">
+            <!-- 時間（分）を入力するフィールド -->
+            <input type="number" id="minutes_input" placeholder="分" min="0" max="60">
+            <!-- 時間（秒）を入力するフィールド -->
+            <input type="number" id="seconds_input" placeholder="秒" min="0" max="59">
+        </div>
+        
+        <div class="button-group">
+            <!-- スタートボタン -->
+            <button id="start_button">スタート</button>
+            <!-- リセットボタン -->
+            <button id="reset_button">リセット</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

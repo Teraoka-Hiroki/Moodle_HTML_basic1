@@ -1,0 +1,11 @@
+/* IDセレクタ：頭に # をつける。「main_title」というIDを持つ要素だけに適用 */
+#main_title {
+  background-color: #e6e6fa; /* 背景色をラベンダー色に */
+  padding: 10px; /* 内側の余白を10ピクセルに */
+}
+
+/* クラスセレクタ：頭に . をつける。「warning」というクラスを持つすべての要素に適用 */
+.warning {
+  color: red; /* 文字色を赤に */
+  font-weight: bold; /* 文字を太字に */
+}
