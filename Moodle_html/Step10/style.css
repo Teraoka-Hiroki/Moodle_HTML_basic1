@@ -1,0 +1,22 @@
+/* （使いやすいようにデザインを整えるCSS。ここでは一部を抜粋） */
+body {
+    display: flex; /* 要素を中央に配置するための準備 */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.timer-container {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.time-display {
+    font-size: 48px; /* 時間表示を大きく */
+    margin: 20px 0;
+}
+button {
+    margin: 5px;
+    padding: 10px 20px;
+}

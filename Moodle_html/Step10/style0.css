@@ -1,0 +1,61 @@
+/* （使いやすいようにデザインを整えるCSS。ここでは一部を抜粋） */
+body {
+    display: flex; /* 要素を中央に配置するための準備 */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+}
+.timer-container {
+    text-align: center;
+    border: none;
+    background: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 40px 30px;
+    border-radius: 20px;
+    min-width: 320px;
+    transition: box-shadow 0.3s;
+}
+.timer-container:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+}
+.time-display {
+    font-size: 56px; /* 時間表示を大きく */
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+    color: #2d3a4b;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+button {
+    margin: 8px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+@media (max-width: 500px) {
+    .timer-container {
+        padding: 20px 5px;
+        min-width: 90vw;
+    }
+    .time-display {
+        font-size: 36px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
